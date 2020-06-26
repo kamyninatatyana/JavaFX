@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane style="-fx-background-color: #4d5555;" xmlns="http://javafx.com/javafx/10.0.2-internal"
+            xmlns:fx="http://javafx.com/fxml/1" fx:controller="chatWindow.Controller">
+
+    <stylesheets>
+        <URL value="@/chatWindow/css/style" />
+    </stylesheets>
+
+    <TextField fx:id="yourMessageWindow" promptText="Введите сообщение" onKeyPressed="#clickEnter"
+               AnchorPane.bottomAnchor="10"
+               AnchorPane.leftAnchor="10"
+               AnchorPane.rightAnchor="150"
+               AnchorPane.topAnchor="565" />
+
+    <Button fx:id="sendButton" onAction="#clickButtonSend"  text="Отправить"
+            AnchorPane.bottomAnchor="10"
+            AnchorPane.leftAnchor="370"
+            AnchorPane.rightAnchor="10"
+            AnchorPane.topAnchor="565">
+    </Button>
+
+    <TextArea fx:id="chatWindow" promptText="Окно чата"
+              AnchorPane.bottomAnchor="55"
+              AnchorPane.leftAnchor="10"
+              AnchorPane.rightAnchor="150"
+              AnchorPane.topAnchor="10">
+    </TextArea>
+
+    <TextArea fx:id="chattersList" promptText="Список участников"
+              AnchorPane.bottomAnchor="55"
+              AnchorPane.leftAnchor="370"
+              AnchorPane.rightAnchor="10"
+              AnchorPane.topAnchor="10" />
+</AnchorPane>

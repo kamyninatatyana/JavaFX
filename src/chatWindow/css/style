@@ -1,0 +1,22 @@
+#sendButton  {
+     -fx-background-color: #ead354;
+     -fx-text-fill: #524b4b;
+     -fx-font-size: 14px;
+     -fx-font-weight: bold;
+
+}
+
+#chatWindow, #chattersList {
+     -fx-control-inner-background: #acaba5;
+     -fx-background-color: #292926;
+     -fx-text-fill: #030303;
+     -fx-font-size: 12px;
+     -fx-font-style: italic;
+}
+
+#yourMessageWindow {
+     /*-fx-control-inner-background: #eae3bd;*/
+     -fx-background-color: #eae3bd;
+     -fx-font-size: 12px;
+
+}
